@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  background: rgb(246, 246, 252);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+header a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(75, 75, 75);
+  position: relative;
+}
+header a span {
+  position: absolute;
+  font-size: 1.3rem;
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 29px;
+}
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cart-container h2 {
+  margin: 2rem 0;
+}
+.item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+.item-container article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.item-container article div:first-child {
+  display: flex;
+}
+.img-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-container {
+}
+img {
+  width: 70%;
+  height: 70%;
+}
+.sub-total {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+  margin: auto;
+}
+.sub-total button {
+  box-shadow: 0px 0px 1px 1px red;
+  color: red;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.7rem;
+  padding: 5px 20px;
+}
+.sub-total button:hover {
+  background-color: red;
+  color: white;
+}
+.sub-total div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 411px) {
+  .sub-total {
+    transform: translatey(6rem);
+  }
+  .item-container article {
+    margin: 0.5rem;
+  }
+}
